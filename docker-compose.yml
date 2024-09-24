@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./stock-price
+    ports:
+      - "8080:8080"
+    environment:
+      - JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+
+  frontend:
+    build: ./stock-price-frontend
+    ports:
+      - "80:80"

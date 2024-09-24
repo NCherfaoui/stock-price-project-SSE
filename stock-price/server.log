@@ -1,0 +1,29 @@
+Starting a Gradle Daemon, 1 incompatible Daemon could not be reused, use --status for details
+
+> Task :compileJava
+/home/user/stock-price/src/main/java/com/example/stockprice/StockController.java:20: error: cannot find symbol
+    public ResponseEntity<String> updatePrice(@RequestParam double newPrice) {
+           ^
+  symbol:   class ResponseEntity
+  location: class StockController
+/home/user/stock-price/src/main/java/com/example/stockprice/StockController.java:27: error: cannot find symbol
+        return ResponseEntity.ok("Price updated");
+               ^
+  symbol:   variable ResponseEntity
+  location: class StockController
+2 errors
+
+> Task :compileJava FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --info option to get more log output.
+> Run with --scan to get full insights.
+
+BUILD FAILED in 19s
+1 actionable task: 1 executed
